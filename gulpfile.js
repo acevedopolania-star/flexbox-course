@@ -6,7 +6,8 @@ gulp.task('serve', function() {
   browserSync.init({
     server: {
       baseDir: "./"
-    }
+    },
+    browser: "google chrome"
   });
 
   gulp.watch("*.html").on("change", reload);
