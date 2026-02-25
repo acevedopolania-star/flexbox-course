@@ -10,5 +10,5 @@ gulp.task('serve', function() {
     browser: "google chrome"
   });
 
-  gulp.watch("*.html").on("change", reload);
+  gulp.watch("**/*.html").on("change", reload);
 });
